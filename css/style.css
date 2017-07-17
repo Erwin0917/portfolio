@@ -30,6 +30,11 @@ h4 {
   font-weight: normal;
   margin: 10px 0; }
 
+h5 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 10px 0; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -295,42 +300,67 @@ h4 {
 .skills-container h3 {
   margin-bottom: 70px; }
 
+.skills-container h5::after {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 4px; }
+
 .skills-container .skill-container {
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%; }
-  .skills-container .skill-container h4 {
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 0; }
+  .skills-container .skill-container .flex {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .skills-container .skill-container p {
     text-align: center; }
 
 .skills-container .lvl {
   margin: 0 auto;
-  position: relative; }
-
-.skills-container .lvl--4-4 {
-  background-image: url(../img/lvl4-4.png);
-  background-repeat: no-repeat;
+  position: relative;
   width: 260px;
-  height: 132px; }
+  height: 132px;
+  background-repeat: no-repeat; }
+  .skills-container .lvl--4on4 h5::after {
+    background-image: url(../img/lvl4.svg); }
+  .skills-container .lvl--3on4 h5::after {
+    background-image: url(../img/lvl3.svg); }
+  .skills-container .lvl--2on4 h5::after {
+    background-image: url(../img/lvl2.svg); }
+  .skills-container .lvl--1on4 h5::after {
+    background-image: url(../img/lvl1.svg); }
+  .skills-container .lvl-html5 {
+    background-image: url(../img/html5.png);
+    background-size: contain;
+    background-position: 50%; }
+  .skills-container .lvl-css3 {
+    background-image: url(../img/css3.png);
+    background-size: contain;
+    background-position: 50%; }
+  .skills-container .lvl-JS {
+    background-image: url(../img/js.png);
+    background-size: contain;
+    background-position: 50%; }
+  .skills-container .lvl-WP {
+    background-image: url(../img/wordpress.svg);
+    background-size: contain;
+    background-position: 50%; }
 
-.skills-container .lvl--3-4 {
-  background-image: url(../img/lvl3-4.png);
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 132px; }
+.skills-container .skill-2lvl--ico {
+  display: block;
+  width: auto;
+  height: 60px;
+  margin: 8px; }
 
-.skills-container .lvl--2-4 {
-  background-image: url(../img/lvl2-4.png);
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 132px; }
-
-.skills-container .lvl--1-4 {
-  background-image: url(../img/lvl1-4.png);
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 132px; }
+.skills-container .less-ico {
+  height: 40px; }
 
 @media (max-width: 1200px) {
   .nav-mobile-btn {

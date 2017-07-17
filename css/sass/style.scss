@@ -35,6 +35,11 @@ h4{
     font-weight: normal;
     margin: 10px 0;
 }
+h5{
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 10px 0;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -312,11 +317,26 @@ h4{
     h3{
         margin-bottom: 70px;
     }
+    h5{
+        &::after{
+            content: "";
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 10px;
+            margin: 0 auto;
+            margin-top: 4px;
+            
+        }
+    }
+    
     .skill-container{
         flex-basis: 20%;
-        h4{
-            font-family: 'Ubuntu', sans-serif;
-            margin-top: 0;
+
+        .flex{
+            flex-wrap: nowrap;
+            align-items: center;
         }
         p{
             text-align: center;
@@ -326,30 +346,61 @@ h4{
     .lvl{
         margin: 0 auto;
         position: relative; 
-    }
-    .lvl--4-4{
-        background-image: url(../img/lvl4-4.png);
-        background-repeat: no-repeat;    
         width: 260px;
         height: 132px;
+        background-repeat: no-repeat;
+        &--4on4{
+            h5::after{
+            background-image: url(../img/lvl4.svg);
+            }
+        }
+        &--3on4{
+            h5::after{
+            background-image: url(../img/lvl3.svg);
+            }
+        }
+        &--2on4{
+            h5::after{
+            background-image: url(../img/lvl2.svg);
+            }
+        }
+        &--1on4{
+            h5::after{
+            background-image: url(../img/lvl1.svg);
+            }
+        }
+
+        &-html5{
+            background-image: url(../img/html5.png);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-css3{
+            background-image: url(../img/css3.png);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-JS{
+            background-image: url(../img/js.png);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-WP{
+            background-image: url(../img/wordpress.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
+
     }
-    .lvl--3-4{
-        background-image: url(../img/lvl3-4.png);
-        background-repeat: no-repeat;    
-        width: 260px;
-        height: 132px;
+    
+    .skill-2lvl--ico{
+        display: block;
+        width: auto;
+        height: 60px;
+        margin: 8px ;
     }
-    .lvl--2-4{
-        background-image: url(../img/lvl2-4.png);
-        background-repeat: no-repeat;    
-        width: 260px;
-        height: 132px;
-    }
-    .lvl--1-4{
-        background-image: url(../img/lvl1-4.png);
-        background-repeat: no-repeat;    
-        width: 260px;
-        height: 132px;
+    .less-ico{
+        height: 40px;
     }
 }
 
