@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="loader">
+            <div class="loader--roll"></div>
+            <p>Ładowanie...</p>
+        </div>
+        <div class="nav-mobile-btn">Menu</div>
+        <div class="nav-container ">
+            <nav class="main-nav">
+                <ul>
+                    <li><a id="home-nav" href="#header">Strona<br> Główna</a></li>
+                    <li><a id="skill-nav" href="#skills">Umiejętności</a></li>
+                    <li><a id="exp-nav" href="#experience">Doświadczenie</a></li>
+                    <li><a id="portfolio-nav" href="#portfolio">Portfolio</a></li>
+                    <li><a id="contact-nav" href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <div id="header" class="header-container" >
+            
+                <div class="header-contact">
+                    <p>Na skróty: </p>
+                        <a href="#">CV - do druku</a>
+                    
+                
+            </div>
+            <div id="scene-container">
+                <div class=" title-header">
+                        <h1>Erwin Heba</h1>
+                        <h2>Front End Developer</h2>
+                 </div>
+                <div id="scene" class="scene"> 
+                    <div class="layer circle c1" data-depth="0.10"></div>
+                    <div class="layer circle c2 " data-depth="0.20"></div>
+                    
+                </div>
+             </div>
+            
+        </div>
+
+        <div id="skills" class="container skills-container">
+            <h2>Umiejętności</h2>
+            <div class="skills-tech flex flex--center ">
+                <h3 class="flex--full">Technologie i narzędzia</h3>
+                <div class="skill-container skill-html5">
+                    <div class="lvl lvl-html5 lvl--4-4"></div>
+                    <div class="html5-desc">
+                        <h4>HTML 5</h4>
+                        <p>Z wyłączeniem pracy z canvas oraz bardziej skomplikowanych animacji</p>
+                    </div>
+                </div>
+                <div class="skill-container skill-css3">
+                    <div class="lvl lvl-css3 lvl--3-4"></div>
+                    <div class="css3-desc">
+                        <h4>CSS 3</h4>
+                        <p>Z wykorzystaniem preprocesora <strong>Sass</strong> na poziomie dobrym oraz podstawowa znajomość <strong>Less</strong></p>
+                    </div>
+                </div>
+                <div class="skill-container skill-js">
+                    <div class="lvl lvl-JS lvl--2-4"></div>
+                    <div class="JS-desc">
+                        <h4>Java Script</h4>
+                        <p>Zaznajomiony z <strong>ES6</strong>, podstawy pracy z <strong>AJAX</strong>, umiejętność pracy z <strong>JSON</strong> oraz poznałem działanie z prototypami. Średni poziom <strong>jQuery</strong>. Aktualnie brakuje mi praktyki, dodatkowo staram się poznać dobre praktyki i wzorce projektowe, następnie chcę przejść do nauki <strong>React</strong></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    
+
+    <script src="assets/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="assets/parallax/parallax.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+	
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+    </body>
+</html>
