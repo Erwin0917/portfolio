@@ -314,8 +314,12 @@ h5{
 // Umiejętności
 
 .skills-container{
+    padding-top: 0; 
+    h2{
+        margin-top: 70px;
+    }
     h3{
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
     h5{
         &::after{
@@ -330,13 +334,28 @@ h5{
             
         }
     }
+    .scal-desc{
+        text-align: center;
+        padding: 0 100px;
+        margin-bottom: 30px;
+    }
     
     .skill-container{
-        flex-basis: 20%;
+        flex-basis: 25%;
+        background-color: #efefef;
+        margin: 20px 0;
+        padding: 20px 10px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(50, 57, 71, 0);
+        transition: box-shadow 0.2s ease-out;
 
+        &:hover{
+            box-shadow: 0 0 10px rgba(50, 57, 71, 0.6);
+        }
         .flex{
             flex-wrap: nowrap;
             align-items: center;
+            margin: 0;
         }
         p{
             text-align: center;
@@ -390,6 +409,46 @@ h5{
             background-size: contain;
             background-position: 50%;
         }
+        &-BS{
+            background-image: url(../img/boostrap.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-gulp{
+            background-image: url(../img/gulp.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-yeoman{
+            background-image: url(../img/yeoman.png);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-webpack{
+            background-image: url(../img/webpack.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-ps{
+            background-image: url(../img/photoshop.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-ai{
+            background-image: url(../img/illustrator.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-pp{
+            background-image: url(../img/pp.png);
+            background-size: contain;
+            background-position: 50%;
+        }
+        &-english{
+            background-image: url(../img/uk.svg);
+            background-size: contain;
+            background-position: 50%;
+        }
 
     }
     
@@ -401,6 +460,24 @@ h5{
     }
     .less-ico{
         height: 40px;
+    }
+
+
+    //certyfikaty
+    .certifications{
+        img{
+            max-width: 200px;
+        }
+    }
+
+    // w wolnym czasie
+    .interests {
+        p{
+            flex-basis: 80%;
+            max-width: 900px;
+            text-align: center;
+            margin: 5px 0;
+        }
     }
 }
 
