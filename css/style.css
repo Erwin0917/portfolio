@@ -434,7 +434,7 @@ h5 {
     border: 1px solid #d42c2c; }
   .nav-container {
     display: none;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     top: auto;
     -webkit-transform: none;
