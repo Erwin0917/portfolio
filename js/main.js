@@ -55,33 +55,7 @@ $(document).ready(function() {
    
     btn.click(toggleMobileMenu);
 
-    debounce(resizeCheck(window, function(){
-        return function(){
-            console.log("work");
-        };
-        
-    }), 1000);
-
-
-    debounce(resizeCheck(window, function(){// zamykanie menu po kliknieciu w link tylko dla mobile
-        return function(){
-            if($(window).width() < "1200"){
-            console.log("działa");
-            $(".nav-container a").click(function(){
-                alert("dziala");
-            })
-        $(".nav-container a").click(function(){
-                btn.text("Menu");
-                $(".nav-container").stop().fadeOut("slow", function(){})
-            });
-        }
-        }
-        
-
-    }), 200 );
     
-   
-
 
    debounce(resizeCheck(window, function(){ // jesli menu w mobile ukryte i jest powiekszenie okna przeglądarki to usuniecie display: none
         if( !$('body').hasClass("mobile") ){
