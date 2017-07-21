@@ -14,9 +14,12 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 1.5rem;
   line-height: 1.4; }
+  p a:hover {
+    text-decoration: underline; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #d42c2c; }
 
 h2 {
   font-size: 3.2rem; }
@@ -57,6 +60,12 @@ h5 {
 .flex--full {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
+
+.flex--1-2 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .loader {
   position: absolute;
@@ -406,20 +415,23 @@ h5 {
   .skills-container .skill-2lvl--ico {
     display: block;
     width: auto;
-    height: 60px;
+    height: 40px;
     margin: 8px; }
   .skills-container .less-ico {
-    height: 40px; }
+    height: 30px; }
   .skills-container .certifications img {
     max-width: 200px; }
+  .skills-container .interests .flex--1-2 {
+    max-width: 400px; }
   .skills-container .interests p {
-    -ms-flex-preferred-size: 80%;
-    flex-basis: 80%;
-    max-width: 900px;
-    text-align: center;
+    text-align: justify;
     margin: 5px 0; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) and (min-width: 1251px) {
+  .container {
+    max-width: 1000px; } }
+
+@media (max-width: 1250px) {
   .nav-mobile-btn {
     display: block;
     position: fixed;
