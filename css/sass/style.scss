@@ -558,6 +558,76 @@ h5{
 }
 
 
+//portfolio
+.portfolio-container{
+    .portfolio-item{
+        overflow: hidden;
+        position: relative;
+        &:hover{
+            .desc{
+                top: 0;
+            }
+        }
+    }
+    .thumb{
+        img{
+            width: 500px;
+        }
+    }
+    .desc{
+        position: absolute;
+        display: inline-flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        top: 0;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        transition: all 0.3s ease-out;
+        p, h4, h5{
+            color: white;
+            flex-basis: 100%;
+            
+            
+        }
+        h4{
+            font-size: 2.6rem;
+        }
+        h5{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+        a{
+            font-size: 3rem;
+            color: #f2ce54;
+            border: 1px solid #f2ce54;
+            border-radius: 6px;
+            padding: 5px;
+            transition: background-color 0.2s linear;
+            align-self: flex-end;
+            &:hover{
+                background-color: white;
+            }
+        }
+        a.disable{
+            color: grey;
+            border: 1px solid grey;
+            cursor: default;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
 
 
 
