@@ -451,6 +451,35 @@ h5 {
     text-align: justify;
     margin: 5px 0; }
 
+#exp {
+  max-width: 600px; }
+
+.exp-container .flex {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.exp-container .data {
+  position: relative; }
+  .exp-container .data::before, .exp-container .data::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: 24px;
+    left: -25px; }
+  .exp-container .data::before {
+    background-color: #d42c2c;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+  .exp-container .data::after {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d42c2c;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+
 @media (max-width: 1640px) {
   .container {
     max-width: 1335px; } }

@@ -519,8 +519,43 @@ h5{
     }
 }
 
+// Doświadczenie
+#exp{
+    max-width: 600px;
+}
+.exp-container{
+    
+    .flex{
+        justify-content: space-around;
+    }
+    .data{
+        position: relative;
+        &::before,&::after{
+            content: "";
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            top: 24px;
+            left: -25px;
+        }
+        &::before{
+            background-color:#d42c2c;
+            width: 20px;
+            height: 20px;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        &::after{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #d42c2c;
+            transform: translateX(-50%) translateY(-50%);
+        }
 
+    }
+    .desc{
 
+    }
+}
 
 
 
