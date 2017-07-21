@@ -47,9 +47,10 @@ h5{
     margin: 10px 0;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 50px 20px;
+    transition: all 0.2s ease-out;
 }
 .hidden{
     display: none;
@@ -132,6 +133,8 @@ h5{
 .nav-mobile-btn{
     display: none;
 }
+
+
 .nav-container{
     position: fixed;
     top: 50%;
@@ -149,7 +152,7 @@ h5{
             transform: translateX(-20px);
             transition: transform 0.2s linear;
             padding-left: 20px;
-            box-shadow: 4px 0px 18px 0px rgba(0,0,0,0.2);
+            box-shadow: 0;
             &:first-child{
                 border-top: none;
                 padding-top: 20px;
@@ -194,10 +197,32 @@ h5{
             background-repeat: no-repeat;
             margin: 0 auto;
             margin-bottom: 8px;
-            transition: background-image 0.2s linear;
+            transition: all 0.2s linear;
         }
     }
 }
+.nav--smaller{
+    transition: all 0.2s linear;
+    a{
+        font-size: 1.6rem;
+        transition: all 0.2s linear;
+        &::before{
+            width: 45px;
+            height: 45px;
+        }
+    }
+    #exp-nav::before{
+        width: 50px;
+        height: 50px;
+    }
+    ul{
+        li{
+            box-shadow: 1px 0px 4px 0px rgba(0,0,0,0.1);
+        }
+    }
+
+}
+
 #home-nav::before{
     background-image: url(../img/ico/home.svg);
 }
@@ -351,24 +376,26 @@ h5{
     }
     
     .skill-container{
-        flex-basis: 25%;
+        flex-basis: 22%;
         background-color: #efefef;
-        margin: 20px 0;
+        margin: 20px 20px;
         padding: 20px 10px;
         border-radius: 6px;
         box-shadow: 0 0 5px rgba(50, 57, 71, 0);
         transition: box-shadow 0.2s ease-out;
-
+        box-sizing: border-box;
         &:hover{
             box-shadow: 0 0 10px rgba(50, 57, 71, 0.6);
         }
         .flex{
             flex-wrap: nowrap;
             align-items: center;
+            justify-content: space-around;
             margin: 0;
         }
         p{
             text-align: center;
+            font-size: 1.4rem;
         }
         
     }
@@ -376,7 +403,7 @@ h5{
         margin: 0 auto;
         position: relative; 
         width: 260px;
-        height: 132px;
+        height: 80px;
         background-repeat: no-repeat;
         &--4on4{
             h5::after{
@@ -501,6 +528,14 @@ h5{
 
 
 // ---------- MOBILE ------------ - - - 
+@media  (max-width: 1640px) {
+    .container{
+        max-width: 1335px;
+    }
+
+}
+
+
 @media  (max-width: 1500px) and (min-width: 1251px){
     .container{
         max-width: 1000px;
@@ -588,3 +623,20 @@ h5{
 
 }
 
+@media  (max-width: 700px) {
+    .flex--1-2{
+        padding: 0 10px;
+        flex: 1 1 50%;
+    }
+    .skills-container{
+        .scal-desc{
+            padding: 0 ;
+        }
+        .skill-container{
+            margin: 20px 10px;
+            padding: 20px 5px;
+        }
+    }
+
+
+}

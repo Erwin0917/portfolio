@@ -70,4 +70,29 @@ $(document).ready(function() {
 
 });
 
+
+
+// smaller menu 
+function smallerMenu(){
+    var menu = $(".nav-container"),
+        headerHeight = $("#header").innerHeight(),
+        scrollPos = $(window).scrollTop();
+
+    $(window).scroll(function (e) {
+        var scrollPos = $(window).scrollTop(); 
+        if(scrollPos >= (headerHeight - 250) ){
+        menu.addClass("nav--smaller");
+        }else menu.removeClass("nav--smaller");
+        
+    });
+    if(scrollPos >= headerHeight){
+        if(scrollPos >= (headerHeight - 250) ){
+        menu.addClass("nav--smaller");
+        }else menu.removeClass("nav--smaller");
+    }
+    
+}
+
+smallerMenu();
+
 })(jQuery);
