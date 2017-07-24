@@ -84,6 +84,8 @@ h5{
         .loader--roll{
             border-left: 10px solid #f2ce54;
             border-right: 10px solid #f2ce54;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
             border-radius: 50%;
             width: 130px;
             height: 130px;
@@ -560,10 +562,17 @@ h5{
 
 //portfolio
 .portfolio-container{
+    .flex{
+        justify-content: space-around;
+    }
     .portfolio-item{
         overflow: hidden;
         position: relative;
+        transition: transform 0.4s ease-out;
+        z-index: 100;
         &:hover{
+            transform: scale(1.2);
+            z-index: 800;
             .desc{
                 top: 0;
             }
@@ -571,19 +580,18 @@ h5{
     }
     .thumb{
         img{
-            width: 500px;
+            width: 300px;
         }
     }
     .desc{
         position: absolute;
-        display: inline-flex;
+        display: block;
         justify-content: space-around;
         flex-wrap: wrap;
         background-color: rgba(0,0,0,0.8);
         width: 100%;
         height: 100%;
         top: 100%;
-        top: 0;
         padding: 20px 10px;
         box-sizing: border-box;
         transition: all 0.3s ease-out;
@@ -595,26 +603,34 @@ h5{
         }
         h4{
             font-size: 2.6rem;
+            color: #f2ce54;
         }
         h5{
             font-family: 'Ubuntu', sans-serif;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.6rem;
             text-align: left;
+            margin-bottom: 0;
         }
         p{
             text-align: left;
+            font-size: 1.3rem;
+            margin-top: 5px;
+            color: #f2ce54;
+        }
+        .flex{
+            justify-content: space-around;
         }
         a{
-            font-size: 3rem;
-            color: #f2ce54;
-            border: 1px solid #f2ce54;
+            font-size: 2.2rem;
+            color: white;
+            border: 1px solid white;
             border-radius: 6px;
             padding: 5px;
             transition: background-color 0.2s linear;
             align-self: flex-end;
             &:hover{
-                background-color: white;
+                background-color: #d42c2c;;
             }
         }
         a.disable{
@@ -625,7 +641,15 @@ h5{
                 background-color: transparent;
             }
         }
+        &-mobile{
+            display: none;
+            top: 130px;
+            padding: 5px;
+
+
+        }
     }
+
 }
 
 
@@ -690,6 +714,7 @@ h5{
         width:40px;
         height: 40px;
     }
+    
     ul{
         margin-right: auto;
         li{
@@ -697,6 +722,7 @@ h5{
             box-sizing: border-box;
             transform: none;
             padding-left: 0;
+            box-shadow: 0;
         }
         li:first-child{
         padding-top: 0;
@@ -707,6 +733,9 @@ h5{
             border-bottom-left-radius: 8px;
         }
     } 
+}
+.nav--smaller ul li{
+    box-shadow: none;
 }
 
 
@@ -729,6 +758,30 @@ h5{
         height: 250px;
     }
 }
+//Portoflio ----- 
+
+.portfolio-container{
+    .portfolio-item{
+        &:hover{
+            transform: none;
+
+            .desc{
+              top:130px;  
+            }
+        }
+
+        .desc{
+            display: none;
+        }
+        .desc-mobile{
+            display: block;
+        }
+
+    }
+}
+
+
+
 
 }
 
