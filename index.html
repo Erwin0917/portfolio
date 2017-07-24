@@ -372,6 +372,34 @@
 
     <div id="contact" class="contact">
         <h2>Kontakt</h2>
+        <div class="flex">
+            <div class="form-container">
+                <h3>Formularz kontaktowy</h3>
+                <form method="post" action="send.php">
+                    <div>
+                        <label for="name">Imię Nazwisko</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    
+                    <div>
+                        <label for="e-mail">E-mail <span>- wymagane</span></label>
+                        <input type="email" name="e-mail" id="e-mail" required="true">
+                    </div>
+                    
+                    <div>
+                        <label for="msg">Wiadomość <span>- wymagane</span></label>
+                         <textarea id="msg" name="msg" required="true"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Wyślij wiadomość</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-links">
+                <h3>Przydatne linki</h3>
+            </div>
+        </div>
+
     </div>
 
     
