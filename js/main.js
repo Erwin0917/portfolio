@@ -24,6 +24,8 @@ $(document).ready(function() {
     
     
 
+   
+
 
     // add mobile class to body
     function addMobileClass(){
@@ -49,11 +51,18 @@ $(document).ready(function() {
             }else {
                 btn.text("Menu");
                 $(".nav-container").stop().fadeOut("slow", function(){})
-            }
-           
+            }        
     }
+    
+    
    
-    btn.click(toggleMobileMenu);
+    $(window).click(function(e){
+        let target = e.target;   
+        if( ( $(target).hasClass("nav-mobile-btn") == btn.hasClass("nav-mobile-btn") || $(target).hasClass("nav-elem") ) && $("body").hasClass("mobile")   ){
+            toggleMobileMenu();
+        }     
+    });
+   
 
     
 

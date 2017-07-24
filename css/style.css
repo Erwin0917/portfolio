@@ -579,6 +579,9 @@ h5 {
       .nav-container a::before {
         width: 40px;
         height: 40px; }
+    .nav-container #exp-nav::before {
+      width: 40px;
+      height: 40px; }
     .nav-container ul {
       margin-right: auto; }
       .nav-container ul li {
