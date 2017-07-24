@@ -375,24 +375,25 @@
         <div class="flex">
             <div class="form-container">
                 <h3>Formularz kontaktowy</h3>
-                <form method="post" action="send.php">
+                <form method="POST" action="http://formspree.io/erwinfrontdev@gmail.com">
                     <div>
                         <label for="name">Imię Nazwisko</label>
                         <input type="text" name="name" id="name">
                     </div>
                     
                     <div>
-                        <label for="e-mail">E-mail <span>- wymagane</span></label>
+                        <label for="email">E-mail <span>- wymagane</span></label>
                         <input type="email" name="e-mail" id="e-mail" required="true">
                     </div>
                     
                     <div>
-                        <label for="msg">Wiadomość <span>- wymagane</span></label>
-                         <textarea id="msg" name="msg" required="true"></textarea>
+                        <label for="message">Wiadomość <span>- wymagane</span></label>
+                         <textarea id="message" name="msg" required="true"></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Wyślij wiadomość</button>
                     </div>
+  
                 </form>
             </div>
             <div class="contact-links">
