@@ -370,31 +370,20 @@
 
 
 
-    <div id="contact" class="contact">
+    <div id="contact" class="contact container">
         <h2>Kontakt</h2>
         <div class="flex">
             <div class="form-container">
                 <h3>Formularz kontaktowy</h3>
-                <form method="POST" action="http://formspree.io/erwinfrontdev@gmail.com">
-                    <div>
-                        <label for="name">Imię Nazwisko</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    
-                    <div>
-                        <label for="email">E-mail <span>- wymagane</span></label>
-                        <input type="email" name="e-mail" id="e-mail" required="true">
-                    </div>
-                    
-                    <div>
-                        <label for="message">Wiadomość <span>- wymagane</span></label>
-                         <textarea id="message" name="msg" required="true"></textarea>
-                    </div>
-                    <div class="button">
-                        <button type="submit">Wyślij wiadomość</button>
-                    </div>
-  
+
+                <form id="contact_form"
+                    method="POST">
+                    <input type="text" name="name">
+                    <input type="email" name="_replyto">
+                    <input type="submit" value="Send">
                 </form>
+
+
             </div>
             <div class="contact-links">
                 <h3>Przydatne linki</h3>
