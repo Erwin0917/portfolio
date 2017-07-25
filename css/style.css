@@ -69,6 +69,16 @@ h5 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.site-container {
+  -webkit-transition: -webkit-filter 0.1s linear;
+  transition: -webkit-filter 0.1s linear;
+  transition: filter 0.1s linear;
+  transition: filter 0.1s linear, -webkit-filter 0.1s linear; }
+
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px); }
+
 .loader {
   position: absolute;
   width: 100%;
@@ -213,6 +223,9 @@ h5 {
   .nav--smaller ul li {
     -webkit-box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.1); }
+  .nav--smaller:hover ul li {
+    -webkit-box-shadow: 1px 0px 18px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0px 18px 0px rgba(0, 0, 0, 0.1); }
 
 #home-nav::before {
   background-image: url(../img/ico/home.svg); }

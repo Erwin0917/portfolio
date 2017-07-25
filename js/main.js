@@ -155,4 +155,25 @@ $('a[href*="#"]')
       }
   )
 
+  // blur site
+function blurOn(){
+      const blurElem = $(".site-container");
+
+      if ( !($("body").hasClass("mobile")) ){
+        blurElem.addClass("blur");
+      }
+      return; 
+  }
+function blurOff(){
+      const blurElem = $(".site-container");
+
+      if ( !($("body").hasClass("mobile")) ){
+        blurElem.removeClass("blur");
+      }
+      return; 
+  }
+
+$(".nav-container").hover(blurOn, blurOff);
+
+
 })(jQuery);
