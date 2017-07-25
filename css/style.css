@@ -379,6 +379,9 @@ h5 {
     .skills-container .skill-container p {
       text-align: center;
       font-size: 1.4rem; }
+  .skills-container ul {
+    list-style: none;
+    padding-left: 0; }
   .skills-container .lvl--4on4 h5::after {
     background-image: url(../img/lvl4.svg); }
   .skills-container .lvl--3on4 h5::after {

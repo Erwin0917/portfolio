@@ -407,6 +407,10 @@ h5{
         }
         
     }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
     .lvl{
         &--4on4{
             h5::after{
