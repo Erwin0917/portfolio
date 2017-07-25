@@ -394,7 +394,9 @@ h5 {
     position: relative;
     width: 260px;
     height: 80px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%; }
     .skills-container .lvl--4on4 h5::after {
       background-image: url(../img/lvl4.svg); }
     .skills-container .lvl--3on4 h5::after {
@@ -404,53 +406,29 @@ h5 {
     .skills-container .lvl--1on4 h5::after {
       background-image: url(../img/lvl1.svg); }
     .skills-container .lvl-html5 {
-      background-image: url(../img/html5.png);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/html5.png); }
     .skills-container .lvl-css3 {
-      background-image: url(../img/css3.png);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/css3.png); }
     .skills-container .lvl-JS {
-      background-image: url(../img/js.png);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/js.png); }
     .skills-container .lvl-WP {
-      background-image: url(../img/wordpress.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/wordpress.svg); }
     .skills-container .lvl-BS {
-      background-image: url(../img/boostrap.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/boostrap.svg); }
     .skills-container .lvl-gulp {
-      background-image: url(../img/gulp.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/gulp.svg); }
     .skills-container .lvl-yeoman {
-      background-image: url(../img/yeoman.png);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/yeoman.png); }
     .skills-container .lvl-webpack {
-      background-image: url(../img/webpack.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/webpack.svg); }
     .skills-container .lvl-ps {
-      background-image: url(../img/photoshop.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/photoshop.svg); }
     .skills-container .lvl-ai {
-      background-image: url(../img/illustrator.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/illustrator.svg); }
     .skills-container .lvl-pp {
-      background-image: url(../img/pp.png);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/pp.png); }
     .skills-container .lvl-english {
-      background-image: url(../img/uk.svg);
-      background-size: contain;
-      background-position: 50%; }
+      background-image: url(../img/uk.svg); }
   .skills-container .skill-2lvl--ico {
     display: block;
     width: auto;
