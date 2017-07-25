@@ -701,7 +701,7 @@ h5{
                         border-bottom: 3px solid #d42c2c;
                         border-left: 3px solid transparent;
                         border-right: 3px solid transparent;
-                        transition: all 0.2s linear;
+                        transition: all 0.3s linear;
             }
                     &:hover{
                         &::before{
@@ -713,6 +713,7 @@ h5{
                     position: relative;
                     font-size: 1.8rem;
                     font-weight: bold;
+                    color: black;
                     
                     &:hover{
                         text-decoration: underline;

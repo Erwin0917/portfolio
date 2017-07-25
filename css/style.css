@@ -628,15 +628,16 @@ h5 {
           border-bottom: 3px solid #d42c2c;
           border-left: 3px solid transparent;
           border-right: 3px solid transparent;
-          -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear; }
+          -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
         .contact .contact-links ul li:hover::before {
           -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
         .contact .contact-links ul li a {
           position: relative;
           font-size: 1.8rem;
-          font-weight: bold; }
+          font-weight: bold;
+          color: black; }
           .contact .contact-links ul li a:hover {
             text-decoration: underline; }
           .contact .contact-links ul li a::before {
