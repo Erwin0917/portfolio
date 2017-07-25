@@ -395,33 +395,8 @@ h5 {
     position: relative;
     width: 260px;
     height: 80px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%; }
-    .skills-container .skill-img-html5 {
-      background-image: url(../img/html5.png); }
-    .skills-container .skill-img-css3 {
-      background-image: url(../img/css3.png); }
-    .skills-container .skill-img-JS {
-      background-image: url(../img/js.png); }
-    .skills-container .skill-img-WP {
-      background-image: url(../img/wordpress.svg); }
-    .skills-container .skill-img-BS {
-      background-image: url(../img/boostrap.svg); }
-    .skills-container .skill-img-gulp {
-      background-image: url(../img/gulp.svg); }
-    .skills-container .skill-img-yeoman {
-      background-image: url(../img/yeoman.png); }
-    .skills-container .skill-img-webpack {
-      background-image: url(../img/webpack.svg); }
-    .skills-container .skill-img-ps {
-      background-image: url(../img/photoshop.svg); }
-    .skills-container .skill-img-ai {
-      background-image: url(../img/illustrator.svg); }
-    .skills-container .skill-img-pp {
-      background-image: url(../img/pp.png); }
-    .skills-container .skill-img-english {
-      background-image: url(../img/uk.svg); }
+    -o-object-fit: contain;
+    object-fit: contain; }
   .skills-container .skill-2lvl--ico {
     display: block;
     width: auto;

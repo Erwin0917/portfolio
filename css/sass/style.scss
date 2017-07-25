@@ -438,60 +438,7 @@ h5{
         position: relative; 
         width: 260px;
         height: 80px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
-        
-
-        &-html5{
-            background-image: url(../img/html5.png);
-            
-        }
-        &-css3{
-            background-image: url(../img/css3.png);
-            
-        }
-        &-JS{
-            background-image: url(../img/js.png);
-            
-        }
-        &-WP{
-            background-image: url(../img/wordpress.svg);
-            
-        }
-        &-BS{
-            background-image: url(../img/boostrap.svg);
-            
-        }
-        &-gulp{
-            background-image: url(../img/gulp.svg);
-            
-        }
-        &-yeoman{
-            background-image: url(../img/yeoman.png);
-            
-        }
-        &-webpack{
-            background-image: url(../img/webpack.svg);
-            
-        }
-        &-ps{
-            background-image: url(../img/photoshop.svg);
-            
-        }
-        &-ai{
-            background-image: url(../img/illustrator.svg);
-            
-        }
-        &-pp{
-            background-image: url(../img/pp.png);
-            
-        }
-        &-english{
-            background-image: url(../img/uk.svg);
-            
-        }
-
+        object-fit: contain;
     }
     
     .skill-2lvl--ico{
