@@ -70,13 +70,6 @@ h5{
     flex-basis: 50%;
     box-sizing: border-box;
 }
-.site-container{
-    transition: filter 0.1s linear;
-}
-.blur{
-    filter: blur(5px);
-    
-}
 
 
 // -------- Loader
@@ -415,13 +408,6 @@ h5{
         
     }
     .lvl{
-        margin: 0 auto;
-        position: relative; 
-        width: 260px;
-        height: 80px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
         &--4on4{
             h5::after{
             background-image: url(../img/lvl4.svg);
@@ -442,6 +428,16 @@ h5{
             background-image: url(../img/lvl1.svg);
             }
         }
+    }
+    .skill-item{
+        margin: 0 auto;
+        position: relative; 
+        width: 260px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        
 
         &-html5{
             background-image: url(../img/html5.png);
@@ -950,5 +946,12 @@ h5{
         }
     }
 
+
+}
+
+@media  (min-height: 550px) {
+   .nav-container{
+       overflow-y: none;
+   }
 
 }

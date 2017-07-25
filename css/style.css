@@ -69,16 +69,6 @@ h5 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.site-container {
-  -webkit-transition: -webkit-filter 0.1s linear;
-  transition: -webkit-filter 0.1s linear;
-  transition: filter 0.1s linear;
-  transition: filter 0.1s linear, -webkit-filter 0.1s linear; }
-
-.blur {
-  -webkit-filter: blur(5px);
-  filter: blur(5px); }
-
 .loader {
   position: absolute;
   width: 100%;
@@ -389,7 +379,15 @@ h5 {
     .skills-container .skill-container p {
       text-align: center;
       font-size: 1.4rem; }
-  .skills-container .lvl {
+  .skills-container .lvl--4on4 h5::after {
+    background-image: url(../img/lvl4.svg); }
+  .skills-container .lvl--3on4 h5::after {
+    background-image: url(../img/lvl3.svg); }
+  .skills-container .lvl--2on4 h5::after {
+    background-image: url(../img/lvl2.svg); }
+  .skills-container .lvl--1on4 h5::after {
+    background-image: url(../img/lvl1.svg); }
+  .skills-container .skill-item {
     margin: 0 auto;
     position: relative;
     width: 260px;
@@ -397,37 +395,29 @@ h5 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%; }
-    .skills-container .lvl--4on4 h5::after {
-      background-image: url(../img/lvl4.svg); }
-    .skills-container .lvl--3on4 h5::after {
-      background-image: url(../img/lvl3.svg); }
-    .skills-container .lvl--2on4 h5::after {
-      background-image: url(../img/lvl2.svg); }
-    .skills-container .lvl--1on4 h5::after {
-      background-image: url(../img/lvl1.svg); }
-    .skills-container .lvl-html5 {
+    .skills-container .skill-item-html5 {
       background-image: url(../img/html5.png); }
-    .skills-container .lvl-css3 {
+    .skills-container .skill-item-css3 {
       background-image: url(../img/css3.png); }
-    .skills-container .lvl-JS {
+    .skills-container .skill-item-JS {
       background-image: url(../img/js.png); }
-    .skills-container .lvl-WP {
+    .skills-container .skill-item-WP {
       background-image: url(../img/wordpress.svg); }
-    .skills-container .lvl-BS {
+    .skills-container .skill-item-BS {
       background-image: url(../img/boostrap.svg); }
-    .skills-container .lvl-gulp {
+    .skills-container .skill-item-gulp {
       background-image: url(../img/gulp.svg); }
-    .skills-container .lvl-yeoman {
+    .skills-container .skill-item-yeoman {
       background-image: url(../img/yeoman.png); }
-    .skills-container .lvl-webpack {
+    .skills-container .skill-item-webpack {
       background-image: url(../img/webpack.svg); }
-    .skills-container .lvl-ps {
+    .skills-container .skill-item-ps {
       background-image: url(../img/photoshop.svg); }
-    .skills-container .lvl-ai {
+    .skills-container .skill-item-ai {
       background-image: url(../img/illustrator.svg); }
-    .skills-container .lvl-pp {
+    .skills-container .skill-item-pp {
       background-image: url(../img/pp.png); }
-    .skills-container .lvl-english {
+    .skills-container .skill-item-english {
       background-image: url(../img/uk.svg); }
   .skills-container .skill-2lvl--ico {
     display: block;
@@ -789,5 +779,9 @@ h5 {
   .skills-container .skill-container {
     margin: 20px 10px;
     padding: 20px 5px; } }
+
+@media (min-height: 550px) {
+  .nav-container {
+    overflow-y: none; } }
 
 /*# sourceMappingURL=style.css.map */
