@@ -390,7 +390,7 @@ h5 {
     background-image: url(../img/lvl2.svg); }
   .skills-container .lvl--1on4 h5::after {
     background-image: url(../img/lvl1.svg); }
-  .skills-container .skill-item {
+  .skills-container .skill-img {
     margin: 0 auto;
     position: relative;
     width: 260px;
@@ -398,29 +398,29 @@ h5 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%; }
-    .skills-container .skill-item-html5 {
+    .skills-container .skill-img-html5 {
       background-image: url(../img/html5.png); }
-    .skills-container .skill-item-css3 {
+    .skills-container .skill-img-css3 {
       background-image: url(../img/css3.png); }
-    .skills-container .skill-item-JS {
+    .skills-container .skill-img-JS {
       background-image: url(../img/js.png); }
-    .skills-container .skill-item-WP {
+    .skills-container .skill-img-WP {
       background-image: url(../img/wordpress.svg); }
-    .skills-container .skill-item-BS {
+    .skills-container .skill-img-BS {
       background-image: url(../img/boostrap.svg); }
-    .skills-container .skill-item-gulp {
+    .skills-container .skill-img-gulp {
       background-image: url(../img/gulp.svg); }
-    .skills-container .skill-item-yeoman {
+    .skills-container .skill-img-yeoman {
       background-image: url(../img/yeoman.png); }
-    .skills-container .skill-item-webpack {
+    .skills-container .skill-img-webpack {
       background-image: url(../img/webpack.svg); }
-    .skills-container .skill-item-ps {
+    .skills-container .skill-img-ps {
       background-image: url(../img/photoshop.svg); }
-    .skills-container .skill-item-ai {
+    .skills-container .skill-img-ai {
       background-image: url(../img/illustrator.svg); }
-    .skills-container .skill-item-pp {
+    .skills-container .skill-img-pp {
       background-image: url(../img/pp.png); }
-    .skills-container .skill-item-english {
+    .skills-container .skill-img-english {
       background-image: url(../img/uk.svg); }
   .skills-container .skill-2lvl--ico {
     display: block;
