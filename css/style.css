@@ -739,15 +739,17 @@ h5 {
   .header-container .circle {
     width: 250px;
     height: 250px; }
-  .portfolio-container .portfolio-item:hover {
-    -webkit-transform: none;
-    transform: none; }
-    .portfolio-container .portfolio-item:hover .desc {
-      top: 130px; }
-  .portfolio-container .portfolio-item .desc {
-    display: none; }
-  .portfolio-container .portfolio-item .desc-mobile {
-    display: block; } }
+  .portfolio-container .portfolio-item {
+    margin: 20px 0; }
+    .portfolio-container .portfolio-item:hover {
+      -webkit-transform: none;
+      transform: none; }
+      .portfolio-container .portfolio-item:hover .desc {
+        top: 130px; }
+    .portfolio-container .portfolio-item .desc {
+      display: none; }
+    .portfolio-container .portfolio-item .desc-mobile {
+      display: block; } }
 
 @media (max-width: 700px) {
   .flex--1-2 {
