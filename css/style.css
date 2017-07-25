@@ -687,6 +687,8 @@ h5 {
 
 @media (max-width: 1500px) and (min-width: 1251px) {
   .container {
+    max-width: 1000px; }
+  .contact .container {
     max-width: 1000px; } }
 
 @media (max-width: 1250px) {
