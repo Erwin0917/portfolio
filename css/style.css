@@ -597,7 +597,7 @@ h5 {
           position: relative;
           background-color: #f1f1f1;
           font-weight: bold;
-          border: 1px solid #70bf3f;
+          border: 1px solid black;
           cursor: pointer;
           -webkit-box-shadow: 0 0 8px transparent;
           box-shadow: 0 0 8px transparent;
