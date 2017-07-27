@@ -397,6 +397,7 @@ h5{
         box-shadow: 0 0 5px rgba(50, 57, 71, 0);
         transition: box-shadow 0.2s ease-out;
         box-sizing: border-box;
+        min-width: 260px;
         &:hover{
             box-shadow: 0 0 10px rgba(50, 57, 71, 0.6);
         }
