@@ -441,7 +441,7 @@ h5{
     .skill-img{
         margin: 0 auto;
         position: relative; 
-        width: 260px;
+        width: 100%;
         height: 80px;
         object-fit: contain;
     }
@@ -610,7 +610,7 @@ h5{
 // Contact ------
 .contact{
     margin-top: 70px;
-    background-color: #f2ce54;
+    background-color: #f9f9f9;
     .container{
         padding-top: 40px; 
         max-width: 1200px;
@@ -639,14 +639,17 @@ h5{
                 height: 20px;
                 font-size: 1.6rem;
                 padding: 5px;
-                background-color: #f2d882;
-                border: 1px solid #d1af3b;
+                background-color: white;
+                border: 1px solid black;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
                 border-radius: 4px;
                 margin-top: 5px;
                 box-shadow: 0 0 8px transparent;
                 transition: all 0.2s linear;
                 &:focus{
-                    box-shadow: 0 0 8px #b58c00;
+                    box-shadow: 0 0 8px rgba(0,0,0,0.2);
                     outline: 0;
                 }
             }
@@ -667,12 +670,13 @@ h5{
                     position: relative;
                     background-color: #f1f1f1;
                     font-weight: bold;
+                    border: 1px solid #70bf3f;
                     cursor: pointer;
                     box-shadow: 0 0 8px transparent;
                     transition: all 0.2s linear;
                     &:hover{
                         background-color: white;
-                        box-shadow: 0 0 8px #b58c00;
+                        box-shadow: 0 0 8px #70bf3f;
                     }
                 }
             }
@@ -702,8 +706,8 @@ h5{
                         left: -43px;
                         top: -8px;
                         border-radius: 50%;
-                        border-top: 3px solid #d42c2c;
-                        border-bottom: 3px solid #d42c2c;
+                        border-top: 3px solid #f2ce54;;
+                        border-bottom: 3px solid #f2ce54;;
                         border-left: 3px solid transparent;
                         border-right: 3px solid transparent;
                         transition: all 0.3s linear;
