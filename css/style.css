@@ -347,8 +347,10 @@ h5 {
     margin-top: 4px; }
   .skills-container .scal-desc {
     text-align: center;
-    padding: 0 100px;
-    margin-bottom: 30px; }
+    padding: 20px 100px;
+    margin-bottom: 30px;
+    border: 2px dashed #f2ad00;
+    border-radius: 4px; }
   .skills-container .skill-container {
     -ms-flex-preferred-size: 22%;
     flex-basis: 22%;
