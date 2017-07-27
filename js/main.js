@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     // add mobile class to body
     function addMobileClass(){
-        if($(window).width() < "1200"){     
+        if($(window).width() < "1250"){     
          $("body").addClass("mobile");
         }else{
          $("body").removeClass("mobile");   
@@ -47,10 +47,10 @@ $(document).ready(function() {
     function toggleMobileMenu(){
         if(btn.text() == "Menu"){
                 btn.text("Zamknij");
-                $(".nav-container").stop().fadeIn("slow", function(){})
+                $(".nav-container").addClass("open")
             }else {
                 btn.text("Menu");
-                $(".nav-container").stop().fadeOut("slow", function(){})
+                $(".nav-container").removeClass("open")
             }        
     }
     

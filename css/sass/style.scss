@@ -784,28 +784,35 @@ h5{
 .nav-mobile-btn{
     display: block;
     position: fixed;
-    top: 23px;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
     background-color: white;
     padding: 20px;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
     cursor: pointer;
     z-index: 900;
     border: 1px solid #d42c2c;
 }
 .nav-container{
-    display: none;
     position: fixed;
     bottom: 0;
-    top: auto;
+    top: -100%;
     transform: none;
     width: 100%;
+    height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 100vh;
-    max-height: 566px;
     z-index: 800;
+    background-color: white;
+    transition: top 0.2s cubic-bezier(.03,1,.54,1);
+    .main-nav{
+        padding-top: 58px;
+    }
     a{
         font-size: 1.4rem;
         &::before{
@@ -837,6 +844,10 @@ h5{
         }
     } 
 }
+.nav-container.open{
+    top: 0;
+}
+
 .nav--smaller ul li{
     box-shadow: none;
 }
@@ -846,6 +857,7 @@ h5{
     justify-content: center;
     flex-direction: column;
     padding-right: 0;
+    padding-top: 60px;
     a{
         margin: 6px 0;
     }
@@ -883,6 +895,10 @@ h5{
 
     }
 }
+.flex--1-2{
+        padding: 0 10px;
+        flex: 1 1 50%;
+    }
 
 
 
@@ -890,10 +906,7 @@ h5{
 }
 
 @media  (max-width: 700px) {
-    .flex--1-2{
-        padding: 0 10px;
-        flex: 1 1 50%;
-    }
+    
     .skills-container{
         .scal-desc{
             padding: 0 ;
